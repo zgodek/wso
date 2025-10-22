@@ -1,0 +1,4 @@
+<network>
+<name>br_vm</name>
+<bridge name="br_vm" stp="on" delay="0"/>
+</network>

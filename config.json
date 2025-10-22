@@ -1,0 +1,14 @@
+{
+    "server_ip": "192.168.100.86",
+    "client_ips": [
+        "192.168.100.31",
+        "192.168.100.82"
+    ],
+    "local_vm_path": "/home/zgodek/vms",
+    "xml_folder": "/tmp",
+    "vm_names": [
+        "server-03",
+        "server-03"
+    ],
+    "nfs_path": "/mnt/nfsshare"
+}

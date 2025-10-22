@@ -1,0 +1,9 @@
+#tworzenie nowej maszyny:
+sudo virt-install --name server-01 --os-type linux --os-variant ubuntu20.04 --ram 1024 --disk /mnt/nfsshare/server-01.img,device=disk,bus=virtio,size=10,format=qcow2 --graphics vnc,listen=0.0.0.0 --noautoconsole --hvm --cdrom OS_imgs/ubuntu-20.04.6-live-server-amd64.iso --boot cdrom,hd
+
+#wyłączanie maszyny:
+sudo virsh shutdown server-01 --mode acpi
+
+#uruchamianie istniejącej maszyny po raz pierwszy?:
+sudo virt-install --name server-01 --os-type linux --os-variant ubuntu20.04 --ram 1024 --disk /mnt/nfsshare/server-01.img,device=disk,bus=virtio,format=raw --graphics vnc,listen=0.0.0.0 --noautoconsole --hvm --boot hd
+
